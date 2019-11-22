@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="BabyGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GameBackground" translatesAutoresizingMaskIntoConstraints="NO" id="f58-Qv-KWA">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Slots" translatesAutoresizingMaskIntoConstraints="NO" id="Lak-Xq-Lh9">
+                                <rect key="frame" x="28" y="414" width="366" height="448"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ButtonSlot" translatesAutoresizingMaskIntoConstraints="NO" id="fec-oZ-h7r" userLabel="slot">
+                                <rect key="frame" x="24" y="95" width="366" height="32"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Circle" id="780-U6-2dv" userLabel="circle">
+                                <rect key="frame" x="228" y="254" width="104" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Oval" id="jCV-J3-3uI" userLabel="oval">
+                                <rect key="frame" x="28" y="100" width="102" height="146"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Triangle" id="hds-15-svp" userLabel="triangle">
+                                <rect key="frame" x="47" y="254" width="118" height="122"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Button" id="qrj-cI-fSZ" userLabel="button">
+                                <rect key="frame" x="339" y="191" width="44" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Square" id="45z-UW-XIP" userLabel="rectangle">
+                                <rect key="frame" x="190" y="161" width="94" height="105"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" id="pQT-uC-qM5" userLabel="rectangle">
+                                <rect key="frame" x="289" y="56" width="94" height="152"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fec-oZ-h7r" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0hs-xm-JvB"/>
+                            <constraint firstItem="Lak-Xq-Lh9" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="3s9-u5-NBL"/>
+                            <constraint firstItem="hds-15-svp" firstAttribute="width" secondItem="Lak-Xq-Lh9" secondAttribute="height" multiplier="59:224" id="HMs-kL-Vrw"/>
+                            <constraint firstItem="fec-oZ-h7r" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="Kb7-KN-a3f"/>
+                            <constraint firstItem="f58-Qv-KWA" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="OZc-cL-VgI"/>
+                            <constraint firstItem="Lak-Xq-Lh9" firstAttribute="height" secondItem="f58-Qv-KWA" secondAttribute="height" multiplier="0.5" id="Pux-if-1KH"/>
+                            <constraint firstItem="Lak-Xq-Lh9" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="QPR-0I-ZFK"/>
+                            <constraint firstItem="f58-Qv-KWA" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="UKB-iQ-rDH"/>
+                            <constraint firstItem="f58-Qv-KWA" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VT8-qr-UD7"/>
+                            <constraint firstItem="f58-Qv-KWA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Vg4-Cb-v8B"/>
+                            <constraint firstItem="45z-UW-XIP" firstAttribute="width" secondItem="Lak-Xq-Lh9" secondAttribute="height" multiplier="47:224" id="a87-VQ-Mqe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Lak-Xq-Lh9" secondAttribute="trailing" constant="20" id="ec2-uE-JV3"/>
+                            <constraint firstItem="jCV-J3-3uI" firstAttribute="width" secondItem="Lak-Xq-Lh9" secondAttribute="height" multiplier="51:224" id="myX-1o-FiT"/>
+                            <constraint firstItem="780-U6-2dv" firstAttribute="width" secondItem="Lak-Xq-Lh9" secondAttribute="height" multiplier="13:56" id="qIU-o7-SmN"/>
+                            <constraint firstItem="fec-oZ-h7r" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="v3M-03-Nf0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="qrj-cI-fSZ" id="Myj-1z-SwP"/>
+                        <outlet property="circle" destination="780-U6-2dv" id="v99-zg-DBM"/>
+                        <outlet property="oval" destination="jCV-J3-3uI" id="5e4-nZ-Unm"/>
+                        <outlet property="rectangle" destination="pQT-uC-qM5" id="0XP-y9-i9R"/>
+                        <outlet property="slot" destination="fec-oZ-h7r" id="d1p-fr-Nfc"/>
+                        <outlet property="square" destination="45z-UW-XIP" id="LEe-sW-rCr"/>
+                        <outlet property="triangle" destination="hds-15-svp" id="6to-Xe-fqh"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="92.410714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Button" width="143" height="145"/>
+        <image name="ButtonSlot" width="115" height="32"/>
+        <image name="Circle" width="69" height="68"/>
+        <image name="GameBackground" width="160" height="240"/>
+        <image name="Oval" width="75" height="106"/>
+        <image name="Rectangle" width="71" height="113"/>
+        <image name="Slots" width="276" height="280"/>
+        <image name="Square" width="70" height="70"/>
+        <image name="Triangle" width="83" height="74"/>
+    </resources>
+</document>
